@@ -4,61 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css.gg -->
+    <link href="https://css.gg/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <title>Tugas 1 | Membuat CV HTML</title>
   </head>
-  <body style="text-align: center">
-    <h1>Curriculum Vitae</h1>
-    <hr width="50%" />
-    <table style="text-align: left">
-      <tr>
-        <th colspan="4">Biodata Diri</th>
-      </tr>
-      <tr>
-        <td rowspan="9">
-          <img src="Arief Badrus Sholeh.jpg" alt="" />
-        </td>
-        <td>Nama lengkap</td>
-        <td>:</td>
-        <td>Arief Badrus Sholeh</td>
-      </tr>
-      <tr>
-        <td>Tempat dan tanggal lahir</td>
-        <td>:</td>
-        <td>Sampang, 11 Januari 2002</td>
-      </tr>
-      <tr>
-        <td>Jenis kelamin</td>
-        <td>:</td>
-        <td>Laki-laki</td>
-      </tr>
-      <tr>
-        <td>Agama</td>
-        <td>:</td>
-        <td>Islam</td>
-      </tr>
-      <tr>
-        <td>Alamat</td>
-        <td>:</td>
-        <td>Dsn. Malangan Timur, Desa Pademawu Timur, Kecamatan Pademawu, Kabupaten Pamekasan Madura, Jawa Timur</td>
-      </tr>
-      <tr>
-        <td>Status</td>
-        <td>:</td>
-        <td>Belum menikah</td>
-      </tr>
-      <tr>
-        <td>Pekerjaan</td>
-        <td>:</td>
-        <td>Mahasiswa</td>
-      </tr>
-      <tr>
-        <td>Kewarganegaraan</td>
-        <td>:</td>
-        <td>Indonesia</td>
-      </tr>
-    </table>
-    <br />
-    <table></table>
-    <h3>Informasi Umum</h3>
+  <body>
+    <div class="container">
+      <aside></aside>
+      <header>
+        <h1>ARIEF BADRUS SHOLEH</h1>
+        <h2>Mahasiswa Teknik Informatika</h2>
+      </header>
+      <section class="hero">
+        <img src="img/profile-picture.jpg" alt="Profile picture" />
+      </section>
+      <section class="profile">
+        <h3>PROFIL</h3>
+        <p>
+          Perkenalkan nama saya Arief Badrus Sholeh. Saya lahir di Pamekasan pada tanggal 11 Januari 2002. Saya berasal dari Madura. Status saya saat ini belum menikah. Saya berkewarganegaraan Indonesia dan merupakan mahasiswa aktif di
+          Institut Teknologi Sepuluh Nopember jurusan Teknik Informatika. Saya merupakan seorang muslim
+        </p>
+      </section>
+      <section class="aside2">
+        <section class="contact">
+          <h3>KONTAK</h3>
+          <ul>
+            <li class="location"><a href="">Pademawu 69321, Pamekasan Madura</a></li>
+            <li class="wa"><a href="">+62852 3268 2405</a></li>
+            <li class="email"><a href="">arifbadrus08@gmail.com</a></li>
+            <li class="instagram"><a href="https://www.instagram.com/ariefbadrussholeh/">ariefbadrussholeh</a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/arief-badrus-sholeh/">Arief Badrus Sholeh</a></li>
+          </ul>
+        </section>
+        <section class="hobby">
+          <h3>HOBI</h3>
+          <p>Saya hobi mendengarkan musik dan memainkan alat musik, seperti gitar dan piano. Saya juga suka bermain game bersama teman</p>
+        </section>
+      </section>
+      <section class="education">
+        <h3>PENDIDIKAN</h3>
+        <ul>
+          <li>
+            Institut Teknologi Sepuluh Nopember (2020-Sekarang)
+            <h4>S1 Teknik Informatika</h4>
+            <ul class="activity">
+              <li>Staff Ahli UKM Rebana ITS 2022 - Divisi Kebudayaan</li>
+              <li>Staff Jamaah Masjid Manarul Ilmi 2022 - Divisi Humas</li>
+            </ul>
+          </li>
+          <li>
+            SMA Negeri 3 Pamekasan (2017-2020)
+            <h4>Kelas Unggulan MIPA 1</h4>
+            <ul class="activity">
+              <li>Anggota Ekstrakurikuler Robotika - RESET</li>
+              <li>Anggota Ekstrakurikuler Kerohanian Islam - ROHIS</li>
+            </ul>
+          </li>
+          <li>
+            SMP Negeri 1 Pademawu (2014-2017)
+            <h4>Kelas Unggulan</h4>
+          </li>
+          <li>SD Negeri Banyuanyar 1 Sampang (2008-2014)</li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>

@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap");
+
+:root {
+  /*Font Color*/
+  --primary-color: #123974;
+  --secondary-color: #5a76a6;
+  --light-color: #becde2;
+  --white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+h4 {
+  font-weight: 500;
+  font-style: italic;
+}
+
+p {
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+ul li {
+  margin-bottom: 1rem;
+  padding-left: 1.3em;
+}
+
+.container {
+  margin: auto;
+  width: 720px;
+  background-color: var(--white);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "aside header header header"
+    "hero profile profile profile"
+    "aside2 education education education";
+}
+
+aside {
+  grid-area: aside;
+  background-color: var(--light-color);
+}
+
+header {
+  grid-area: header;
+  padding: 1rem;
+}
+
+header h1 {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+header h2 {
+  color: var(--light-color);
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+section.hero {
+  grid-area: hero;
+  background-color: var(--secondary-color);
+  padding: 0.7rem;
+}
+
+section.hero img {
+  width: 180px;
+  border-radius: 100px;
+  /*border: 0.3rem solid var(--light-color);*/
+}
+
+section.profile {
+  text-align: end;
+  grid-area: profile;
+  background-color: var(--secondary-color);
+  padding: 1.3rem 1rem;
+}
+
+section.profile h3,
+section.profile p {
+  color: var(--white);
+}
+
+section.aside2 {
+  grid-area: aside2;
+  background-color: var(--light-color);
+  padding: 1.3rem 1rem;
+}
+
+section.contact {
+  margin-bottom: 2rem;
+}
+
+section.contact li:before {
+  content: "\f041"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+section.contact li.wa:before {
+  content: "\f232"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+}
+section.contact li.email:before {
+  content: "\f0e0"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+}
+section.contact li.instagram:before {
+  content: "\f16d"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+}
+section.contact li.linkedin:before {
+  content: "\f08c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+}
+
+section.education {
+  grid-area: education;
+  padding: 1.3rem 1rem 1.3rem 6rem;
+}
+
+section.education ul li {
+  padding-left: 0;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+ul.activity {
+  list-style-type: disc;
+  margin-left: 1.3rem;
+  margin-top: 0.5rem;
+}
+section.education ul.activity li {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  color: black;
+}
