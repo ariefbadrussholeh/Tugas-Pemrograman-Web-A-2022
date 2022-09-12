@@ -121,7 +121,7 @@ section.aside2 {
 }
 
 section.contact {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 section.contact li:before {
@@ -146,6 +146,10 @@ section.contact li.instagram:before {
 section.contact li.linkedin:before {
   content: "\f08c"; /* FontAwesome Unicode */
   font-family: FontAwesome;
+}
+
+section.hobby {
+  margin-bottom: 1.5rem;
 }
 
 section.education {
